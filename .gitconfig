@@ -1,0 +1,47 @@
+[user]
+	name = Michael Siebert
+	email = siebertm85@googlemail.com
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	cp = cherry-pick
+[core]
+	editor = vim
+	quotepath = false
+	excludesfile = /Users/micha/.gitignore_global
+[merge]
+	summary = true
+  tool = "p4merge" 
+[mergetool "p4merge"]
+  cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \
+            "$PWD/$BASE" \
+            "$PWD/$LOCAL" \
+            "$PWD/$REMOTE" \
+            "$PWD/$MERGED" 
+  keepBackup = false
+  trustExitCode = false
+
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+	diff = auto
+[pack]
+	threads = 2
+[push]
+	default = tracking
+[github]
+	user = siebert
+	token = 8ca9234b8bd5713128f390fa0c643e77
+[branch]
+	autosetuprebase = always
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Volumes/SourceTree/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[ghi]
+	token = f94bfdfeee0e14a7745d06d3f39ddd3a8d17f414

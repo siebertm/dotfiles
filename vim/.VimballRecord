@@ -1,0 +1,3 @@
+tComment.vba: call delete('/Users/micha/.vim/doc/tComment.txt')|call delete('/Users/micha/.vim/plugin/tComment.vim')|call delete('/Users/micha/.vim/autoload/tcomment.vim')
+supertab.vba: call delete('/Users/micha/.vim/doc/supertab.txt')|call delete('/Users/micha/.vim/plugin/supertab.vim')
+zoomwin.vba: call delete('/Users/micha/.vim/plugin/ZoomWinPlugin.vim')|call delete('/Users/micha/.vim/doc/ZoomWin.txt')|call delete('/Users/micha/.vim/autoload/ZoomWin.vim')
